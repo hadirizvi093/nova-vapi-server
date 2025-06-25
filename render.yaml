@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: nova-vapi-server
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: AZURE_API_KEY
+        sync: false
+      - key: AZURE_DEPLOYMENT_NAME
+        sync: false
+      - key: AZURE_RESOURCE_NAME
+        sync: false
